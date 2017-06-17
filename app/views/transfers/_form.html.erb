@@ -1,0 +1,57 @@
+<%= form_with(model: transfer, local: true) do |form| %>
+  <% if transfer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(transfer.errors.count, "error") %> prohibited this transfer from being saved:</h2>
+
+      <ul>
+      <% transfer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :from_stop_identifier %>
+    <%= form.text_field :from_stop_identifier, id: :transfer_from_stop_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :to_stop_identifier %>
+    <%= form.text_field :to_stop_identifier, id: :transfer_to_stop_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :transfer_type %>
+    <%= form.number_field :transfer_type, id: :transfer_transfer_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :min_transfer_time %>
+    <%= form.number_field :min_transfer_time, id: :transfer_min_transfer_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :from_route_identifier %>
+    <%= form.text_field :from_route_identifier, id: :transfer_from_route_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :to_route_identifier %>
+    <%= form.text_field :to_route_identifier, id: :transfer_to_route_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :from_trip_identifier %>
+    <%= form.text_field :from_trip_identifier, id: :transfer_from_trip_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :to_trip_identifier %>
+    <%= form.text_field :to_trip_identifier, id: :transfer_to_trip_identifier %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

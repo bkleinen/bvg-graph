@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>From stop identifier:</strong>
+  <%= @transfer.from_stop_identifier %>
+</p>
+
+<p>
+  <strong>To stop identifier:</strong>
+  <%= @transfer.to_stop_identifier %>
+</p>
+
+<p>
+  <strong>Transfer type:</strong>
+  <%= @transfer.transfer_type %>
+</p>
+
+<p>
+  <strong>Min transfer time:</strong>
+  <%= @transfer.min_transfer_time %>
+</p>
+
+<p>
+  <strong>From route identifier:</strong>
+  <%= @transfer.from_route_identifier %>
+</p>
+
+<p>
+  <strong>To route identifier:</strong>
+  <%= @transfer.to_route_identifier %>
+</p>
+
+<p>
+  <strong>From trip identifier:</strong>
+  <%= @transfer.from_trip_identifier %>
+</p>
+
+<p>
+  <strong>To trip identifier:</strong>
+  <%= @transfer.to_trip_identifier %>
+</p>
+
+<%= link_to 'Edit', edit_transfer_path(@transfer) %> |
+<%= link_to 'Back', transfers_path %>

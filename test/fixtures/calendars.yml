@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  service_identifier: MyString
+  monday: 1
+  tuesday: 1
+  wednesday: 1
+  thursday: 1
+  friday: 1
+  saturday: 1
+  sunday: 1
+  start_date: 2017-06-17
+  end_date: 2017-06-17
+
+two:
+  service_identifier: MyString
+  monday: 1
+  tuesday: 1
+  wednesday: 1
+  thursday: 1
+  friday: 1
+  saturday: 1
+  sunday: 1
+  start_date: 2017-06-17
+  end_date: 2017-06-17

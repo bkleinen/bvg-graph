@@ -1,0 +1,57 @@
+<%= form_with(model: trip, local: true) do |form| %>
+  <% if trip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trip.errors.count, "error") %> prohibited this trip from being saved:</h2>
+
+      <ul>
+      <% trip.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :route_identifier %>
+    <%= form.text_field :route_identifier, id: :trip_route_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :service_identifier %>
+    <%= form.text_field :service_identifier, id: :trip_service_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trip_identifier %>
+    <%= form.text_field :trip_identifier, id: :trip_trip_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trip_headsign %>
+    <%= form.text_field :trip_headsign, id: :trip_trip_headsign %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trip_short_name %>
+    <%= form.text_field :trip_short_name, id: :trip_trip_short_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :direction_identifier %>
+    <%= form.text_field :direction_identifier, id: :trip_direction_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :block_identifier %>
+    <%= form.text_field :block_identifier, id: :trip_block_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shape_identifier %>
+    <%= form.text_field :shape_identifier, id: :trip_shape_identifier %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
