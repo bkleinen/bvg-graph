@@ -4,6 +4,8 @@ services:
     image: postgres
     volumes:
       - ../bvg-postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
   bvg-graph:
     build: .
     command: bundle exec rails s -p 3000 -b '0.0.0.0'
