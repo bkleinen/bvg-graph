@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170617135435) do
+ActiveRecord::Schema.define(version: 20170617140859) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,6 +59,15 @@ ActiveRecord::Schema.define(version: 20170617135435) do
     t.string "route_color"
     t.string "route_text_color"
     t.string "route_desc"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "shapes", force: :cascade do |t|
+    t.integer "shape_identifier"
+    t.decimal "shape_pt_lat"
+    t.decimal "shape_pt_lon"
+    t.integer "shape_pt_sequence"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

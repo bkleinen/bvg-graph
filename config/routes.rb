@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :shapes
   resources :routes
   resources :trips
   resources :stop_times

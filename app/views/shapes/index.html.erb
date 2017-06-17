@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Shapes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Shape identifier</th>
+      <th>Shape pt lat</th>
+      <th>Shape pt lon</th>
+      <th>Shape pt sequence</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shapes.each do |shape| %>
+      <tr>
+        <td><%= shape.shape_identifier %></td>
+        <td><%= shape.shape_pt_lat %></td>
+        <td><%= shape.shape_pt_lon %></td>
+        <td><%= shape.shape_pt_sequence %></td>
+        <td><%= link_to 'Show', shape %></td>
+        <td><%= link_to 'Edit', edit_shape_path(shape) %></td>
+        <td><%= link_to 'Destroy', shape, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Shape', new_shape_path %>
