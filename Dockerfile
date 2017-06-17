@@ -22,7 +22,7 @@ RUN apk update && \
 
 WORKDIR $APP_HOME
 ADD Gemfile* $APP_HOME/
-ADD Gemfile.lock $APP_HOME//Gemfile.lock
+ADD Gemfile.lock $APP_HOME/Gemfile.lock
 
 RUN bundle config build.nokogiri --use-system-libraries && \
     bundle install && \
