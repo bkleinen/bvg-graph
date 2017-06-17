@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170617212303) do
+ActiveRecord::Schema.define(version: 20170617222838) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20170617212303) do
     t.string "agency_timezone"
     t.string "agency_lang"
     t.string "agency_phone"
+    t.index ["agency_identifier"], name: "index_agencies_on_agency_identifier"
   end
 
   create_table "calendar_dates", force: :cascade do |t|
@@ -29,6 +30,7 @@ ActiveRecord::Schema.define(version: 20170617212303) do
     t.date "date"
     t.string "exception_type"
     t.string "integer"
+    t.index ["service_identifier"], name: "index_calendar_dates_on_service_identifier"
   end
 
   create_table "calendars", force: :cascade do |t|
@@ -42,6 +44,7 @@ ActiveRecord::Schema.define(version: 20170617212303) do
     t.integer "sunday"
     t.date "start_date"
     t.date "end_date"
+    t.index ["service_identifier"], name: "index_calendars_on_service_identifier"
   end
 
   create_table "routes", force: :cascade do |t|
@@ -53,6 +56,7 @@ ActiveRecord::Schema.define(version: 20170617212303) do
     t.string "route_color"
     t.string "route_text_color"
     t.string "route_desc"
+    t.index ["route_identifier"], name: "index_routes_on_route_identifier"
   end
 
   create_table "shapes", force: :cascade do |t|
@@ -60,6 +64,7 @@ ActiveRecord::Schema.define(version: 20170617212303) do
     t.decimal "shape_pt_lat"
     t.decimal "shape_pt_lon"
     t.integer "shape_pt_sequence"
+    t.index ["shape_identifier"], name: "index_shapes_on_shape_identifier"
   end
 
   create_table "stop_times", force: :cascade do |t|
@@ -83,6 +88,7 @@ ActiveRecord::Schema.define(version: 20170617212303) do
     t.decimal "stop_lon"
     t.integer "location_type"
     t.string "parent_station"
+    t.index ["stop_identifier"], name: "index_stops_on_stop_identifier"
   end
 
   create_table "transfers", force: :cascade do |t|
@@ -106,6 +112,8 @@ ActiveRecord::Schema.define(version: 20170617212303) do
     t.string "block_identifier"
     t.string "shape_identifier"
     t.integer "length_cache"
+    t.index ["route_identifier"], name: "index_trips_on_route_identifier"
+    t.index ["trip_identifier"], name: "index_trips_on_trip_identifier"
   end
 
 end

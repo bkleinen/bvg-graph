@@ -11,6 +11,7 @@ class TripsController < ApplicationController
   # GET /trips/1.json
   def show
     @stop_times = @trip.stop_times
+    @hops = @trip.hops
   end
 
   # GET /trips/new

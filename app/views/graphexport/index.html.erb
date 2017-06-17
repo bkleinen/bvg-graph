@@ -5,19 +5,22 @@
 <table>
   <thead>
     <tr>
-      <th>Route identifier</th>
-      <th>Route short name</th>
+      <th>Route ID</th>
       <th>Route type</th>
+      <th>Name</th>
+      <th>Longest Trip</th>
       <th colspan="1"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @routes.each do |route| %>
+    <% @routes.each do |route|
+      trip = @longest_trips[route.id] %>
       <tr>
         <td><%= route.route_identifier %></td>
-        <td><%= route.route_short_name %></td>
         <td><%= route.route_type %></td>
+        <td><%= route.route_short_name %></td>
+        <td><%=  link_to "to #{trip.trip_headsign}", trip%></td>
         <td><%= link_to 'Show', route %></td>
       </tr>
     <% end %>
