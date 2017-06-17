@@ -27,7 +27,6 @@ module BVG
            end
           puts fields.inspect
           clazz.create(fields)
-
         end
       end
     end

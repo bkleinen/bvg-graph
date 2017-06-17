@@ -1,3 +1,5 @@
+# {:trip_identifier=>67937726, :arrival_time=>"19:50:00", :departure_time=>"19:50:00", :stop_identifier=>"250000195401", :stop_sequence=>12, :pickup_type=>0, :drop_off_type=>0, :stop_headsign=>"\"\r\n"}
+
 
 module BVG
   DataSource = Struct.new(:clazz,:file,:fields)

@@ -1,7 +1,7 @@
 class CreateStopTimes < ActiveRecord::Migration[5.1]
   def change
     create_table :stop_times do |t|
-      t.integer :trip_identifier
+      t.string :trip_identifier
       t.time :arrival_time
       t.time :departure_time
       t.string :stop_identifier
