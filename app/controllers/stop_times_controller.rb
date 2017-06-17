@@ -4,7 +4,7 @@ class StopTimesController < ApplicationController
   # GET /stop_times
   # GET /stop_times.json
   def index
-    @stop_times = StopTime.all
+    @stop_times = StopTime.all.page params[:page]
   end
 
   # GET /stop_times/1
