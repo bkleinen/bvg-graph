@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Transfers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>From stop</th>
+      <th>To stop</th>
+      <th>Transfer type</th>
+      <th>Min transfer time</th>
+      <th>From route identifier</th>
+      <th>To route identifier</th>
+      <th>From trip</th>
+      <th>To trip</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @transfers.each do |transfer| %>
+      <tr>
+        <td><%= transfer.from_stop_id %></td>
+        <td><%= transfer.to_stop_id %></td>
+        <td><%= transfer.transfer_type %></td>
+        <td><%= transfer.min_transfer_time %></td>
+        <td><%= transfer.from_route_identifier %></td>
+        <td><%= transfer.to_route_identifier %></td>
+        <td><%= transfer.from_trip_id %></td>
+        <td><%= transfer.to_trip_id %></td>
+        <td><%= link_to 'Show', transfer %></td>
+        <td><%= link_to 'Edit', edit_transfer_path(transfer) %></td>
+        <td><%= link_to 'Destroy', transfer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Transfer', new_transfer_path %>

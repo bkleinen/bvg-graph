@@ -1,4 +1,5 @@
 require "#{Rails.root}/lib/bvg-import/import.rb"
+require "#{Rails.root}/lib/bvg-import/files_to_tables.rb"
 
 include BVG
 
@@ -6,7 +7,7 @@ transfer_fields = {from_stop_id: :string, to_stop_id: :string, transfer_type: :i
 transfer = DataSource.new('Transfer','db/data/transfers.txt',transfer_fields)
 
 ds = transfer
-#import_datasource(ds)
+import_datasource(ds)
 puts scaffold_generator(ds)
 
 puts "all data sources: "
