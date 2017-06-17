@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+
 <p>
   <strong>Route identifier:</strong>
   <%= @route.route_identifier %>
@@ -42,3 +43,46 @@
 
 <%= link_to 'Edit', edit_route_path(@route) %> |
 <%= link_to 'Back', routes_path %>
+
+
+<p id="notice"><%= notice %></p>
+
+<h1>Trips</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Route identifier</th>
+      <th>Service identifier</th>
+      <th>Trip identifier</th>
+      <th>Trip headsign</th>
+      <th>Trip short name</th>
+      <th>Direction identifier</th>
+      <th>Block identifier</th>
+      <th>Shape identifier</th>
+      <th>Length</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trips.each do |trip| %>
+      <tr>
+        <td><%= trip.route_identifier %></td>
+        <td><%= trip.service_identifier %></td>
+        <td><%= trip.trip_identifier %></td>
+        <td><%= trip.trip_headsign %></td>
+        <td><%= trip.trip_short_name %></td>
+        <td><%= trip.direction_identifier %></td>
+        <td><%= trip.block_identifier %></td>
+        <td><%= trip.shape_identifier %></td>
+        <td><%= trip.length %></td>
+        <td><%= link_to 'Show', trip %></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trip', new_trip_path %>

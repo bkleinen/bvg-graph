@@ -1,0 +1,29 @@
+<table>
+  <thead>
+    <tr>
+      <th>Trip identifier</th>
+      <th>Arrival time</th>
+      <th>Departure time</th>
+      <th>Stop </th>
+      <th>Stop sequence</th>
+      <th>Pickup type</th>
+      <th>Drop off type</th>
+      <th>Stop headsign</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stop_times.each do |stop_time| %>
+      <tr>
+        <td><%= stop_time.trip_identifier %></td>
+        <td><%= stop_time.arrival_time %></td>
+        <td><%= stop_time.departure_time %></td>
+        <td><%= link_to stop_time.stop.stop_name, stop_time.stop %></td>
+        <td><%= stop_time.stop_sequence %></td>
+        <td><%= stop_time.pickup_type %></td>
+        <td><%= stop_time.drop_off_type %></td>
+        <td><%= stop_time.stop_headsign %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

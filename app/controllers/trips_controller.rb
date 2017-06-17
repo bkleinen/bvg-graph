@@ -10,6 +10,7 @@ class TripsController < ApplicationController
   # GET /trips/1
   # GET /trips/1.json
   def show
+    @stop_times = @trip.stop_times
   end
 
   # GET /trips/new
