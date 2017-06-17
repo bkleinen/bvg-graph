@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170617115730) do
+ActiveRecord::Schema.define(version: 20170617120238) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,15 @@ ActiveRecord::Schema.define(version: 20170617115730) do
     t.string "agency_timezone"
     t.string "agency_lang"
     t.string "agency_phone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "calendar_dates", force: :cascade do |t|
+    t.integer "service_identifier"
+    t.date "date"
+    t.string "exception_type"
+    t.string "integer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
