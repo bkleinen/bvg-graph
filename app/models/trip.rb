@@ -3,7 +3,11 @@ class Trip < ApplicationRecord
     StopTime.where(trip_identifier: trip_identifier)
   end
   def length
-    StopTime.where(trip_identifier: trip_identifier).count
+    unless length_cache
+      self.length_cache = StopTime.where(trip_identifier: trip_identifier).count
+      save
+    end
+    return length_cache
   end
 
 end
