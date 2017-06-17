@@ -9,4 +9,7 @@ https://docs.docker.com/compose/rails/
 
 docker-compose run bvg-graph rails new . --force --database=postgresql
 
-docker-compose up
+
+# usage
+    docker-compose up
+    docker-compose exec bvg-graph bash

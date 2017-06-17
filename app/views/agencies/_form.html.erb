@@ -1,0 +1,47 @@
+<%= form_with(model: agency, local: true) do |form| %>
+  <% if agency.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(agency.errors.count, "error") %> prohibited this agency from being saved:</h2>
+
+      <ul>
+      <% agency.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :agency_identifier %>
+    <%= form.number_field :agency_identifier, id: :agency_agency_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agency_name %>
+    <%= form.text_field :agency_name, id: :agency_agency_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agency_url %>
+    <%= form.text_field :agency_url, id: :agency_agency_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agency_timezone %>
+    <%= form.text_field :agency_timezone, id: :agency_agency_timezone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agency_lang %>
+    <%= form.text_field :agency_lang, id: :agency_agency_lang %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agency_phone %>
+    <%= form.text_field :agency_phone, id: :agency_agency_phone %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
