@@ -3,8 +3,17 @@ require "files_to_tables.rb"
 module BVG
   def scaffold_generator(ds)
     fields = ds.fields.map{|f,t| "#{f.to_s}:#{t.to_s}"}.join(" ")
-    puts "rails generate scaffold #{ds.clazz} #{fields}"
+    "rails generate scaffold #{ds.clazz} #{fields}"
   end
+
+  def psql_copy_generator(ds)
+  #  \copy routes(route_identifier, agency_identifier, route_short_name, route_long_name, route_type, route_color, route_text_color, route_desc) FROM '../bvg-data/routes.txt' DELIMITER ',' CSV HEADER;
+    table = ds.clazz.constantize.table_name
+    fields = ds.fields.map{|f,t| "#{f.to_s}"}.join(", ")
+    "\\copy #{table}(#{fields})" +
+    " FROM '../bvg-data/#{ds.file}' DELIMITER ',' CSV HEADER;"
+  end
+
   def import_datasource(ds)
     clazz = ds.clazz.constantize
     clazz.destroy_all
