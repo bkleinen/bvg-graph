@@ -13,3 +13,7 @@ docker-compose run bvg-graph rails new . --force --database=postgresql
 # usage
     docker-compose up
     docker-compose exec bvg-graph bash
+
+
+# copy the bvg data   
+    - "../bvg-data:/usr/src/app/db/data"

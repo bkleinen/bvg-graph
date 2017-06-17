@@ -1,0 +1,67 @@
+<%= form_with(model: calendar, local: true) do |form| %>
+  <% if calendar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(calendar.errors.count, "error") %> prohibited this calendar from being saved:</h2>
+
+      <ul>
+      <% calendar.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :service_identifier %>
+    <%= form.text_field :service_identifier, id: :calendar_service_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :monday %>
+    <%= form.number_field :monday, id: :calendar_monday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tuesday %>
+    <%= form.number_field :tuesday, id: :calendar_tuesday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wednesday %>
+    <%= form.number_field :wednesday, id: :calendar_wednesday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :thursday %>
+    <%= form.number_field :thursday, id: :calendar_thursday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :friday %>
+    <%= form.number_field :friday, id: :calendar_friday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :saturday %>
+    <%= form.number_field :saturday, id: :calendar_saturday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sunday %>
+    <%= form.number_field :sunday, id: :calendar_sunday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.date_select :start_date, id: :calendar_start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date %>
+    <%= form.date_select :end_date, id: :calendar_end_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
