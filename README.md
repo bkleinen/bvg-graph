@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## SETUP of Docker Rails app
 
-Things you may want to cover:
+for setting up the rails app in docker, I've followed the instructions in:
+https://docs.docker.com/compose/rails/
 
-* Ruby version
+- but used alpine
 
-* System dependencies
+docker-compose run bvg-graph rails new . --force --database=postgresql
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+docker-compose up
