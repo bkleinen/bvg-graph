@@ -10,7 +10,6 @@ class CreateTrips < ActiveRecord::Migration[5.1]
       t.string :block_identifier
       t.string :shape_identifier
 
-      t.timestamps
     end
   end
 end

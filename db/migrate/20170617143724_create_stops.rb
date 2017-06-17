@@ -10,7 +10,6 @@ class CreateStops < ActiveRecord::Migration[5.1]
       t.integer :location_type
       t.string :parent_station
 
-      t.timestamps
     end
   end
 end

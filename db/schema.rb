@@ -22,8 +22,6 @@ ActiveRecord::Schema.define(version: 20170617143724) do
     t.string "agency_timezone"
     t.string "agency_lang"
     t.string "agency_phone"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "calendar_dates", force: :cascade do |t|
@@ -31,8 +29,6 @@ ActiveRecord::Schema.define(version: 20170617143724) do
     t.date "date"
     t.string "exception_type"
     t.string "integer"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "calendars", force: :cascade do |t|
@@ -46,8 +42,6 @@ ActiveRecord::Schema.define(version: 20170617143724) do
     t.integer "sunday"
     t.date "start_date"
     t.date "end_date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "routes", force: :cascade do |t|
@@ -59,8 +53,6 @@ ActiveRecord::Schema.define(version: 20170617143724) do
     t.string "route_color"
     t.string "route_text_color"
     t.string "route_desc"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "shapes", force: :cascade do |t|
@@ -68,8 +60,6 @@ ActiveRecord::Schema.define(version: 20170617143724) do
     t.decimal "shape_pt_lat"
     t.decimal "shape_pt_lon"
     t.integer "shape_pt_sequence"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "stop_times", force: :cascade do |t|
@@ -81,8 +71,6 @@ ActiveRecord::Schema.define(version: 20170617143724) do
     t.integer "pickup_type"
     t.integer "drop_off_type"
     t.string "stop_headsign"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "stops", force: :cascade do |t|
@@ -94,8 +82,6 @@ ActiveRecord::Schema.define(version: 20170617143724) do
     t.decimal "stop_lon"
     t.integer "location_type"
     t.string "parent_station"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "transfers", force: :cascade do |t|
@@ -107,8 +93,6 @@ ActiveRecord::Schema.define(version: 20170617143724) do
     t.string "to_route_identifier"
     t.string "from_trip_identifier"
     t.string "to_trip_identifier"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "trips", force: :cascade do |t|
@@ -120,8 +104,6 @@ ActiveRecord::Schema.define(version: 20170617143724) do
     t.string "direction_identifier"
     t.string "block_identifier"
     t.string "shape_identifier"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end

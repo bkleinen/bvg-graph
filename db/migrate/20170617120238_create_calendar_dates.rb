@@ -6,7 +6,6 @@ class CreateCalendarDates < ActiveRecord::Migration[5.1]
       t.string :exception_type
       t.string :integer
 
-      t.timestamps
     end
   end
 end

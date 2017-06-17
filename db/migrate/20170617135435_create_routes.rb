@@ -9,8 +9,6 @@ class CreateRoutes < ActiveRecord::Migration[5.1]
       t.string :route_color
       t.string :route_text_color
       t.string :route_desc
-
-      t.timestamps
     end
   end
 end

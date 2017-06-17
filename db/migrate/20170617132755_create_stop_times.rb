@@ -10,7 +10,6 @@ class CreateStopTimes < ActiveRecord::Migration[5.1]
       t.integer :drop_off_type
       t.string :stop_headsign
 
-      t.timestamps
     end
   end
 end

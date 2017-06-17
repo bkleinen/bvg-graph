@@ -10,7 +10,6 @@ class CreateTransfers < ActiveRecord::Migration[5.1]
       t.string :from_trip_identifier
       t.string :to_trip_identifier
 
-      t.timestamps
     end
   end
 end

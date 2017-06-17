@@ -6,7 +6,6 @@ class CreateShapes < ActiveRecord::Migration[5.1]
       t.decimal :shape_pt_lon
       t.integer :shape_pt_sequence
 
-      t.timestamps
     end
   end
 end
