@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :stop_times
   resources :calendars
   resources :calendar_dates
   resources :agencies

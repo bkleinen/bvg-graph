@@ -1,0 +1,57 @@
+<%= form_with(model: stop_time, local: true) do |form| %>
+  <% if stop_time.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(stop_time.errors.count, "error") %> prohibited this stop_time from being saved:</h2>
+
+      <ul>
+      <% stop_time.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :trip_identifier %>
+    <%= form.number_field :trip_identifier, id: :stop_time_trip_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :arrival_time %>
+    <%= form.time_select :arrival_time, id: :stop_time_arrival_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :departure_time %>
+    <%= form.time_select :departure_time, id: :stop_time_departure_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stop_identifier %>
+    <%= form.number_field :stop_identifier, id: :stop_time_stop_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stop_sequence %>
+    <%= form.number_field :stop_sequence, id: :stop_time_stop_sequence %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pickup_type %>
+    <%= form.number_field :pickup_type, id: :stop_time_pickup_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :drop_off_type %>
+    <%= form.number_field :drop_off_type, id: :stop_time_drop_off_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stop_headsign %>
+    <%= form.text_field :stop_headsign, id: :stop_time_stop_headsign %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
