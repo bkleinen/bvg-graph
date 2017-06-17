@@ -1,2 +1,0 @@
-class Stop < ApplicationRecord
-end

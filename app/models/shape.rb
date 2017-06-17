@@ -1,2 +1,0 @@
-class Shape < ApplicationRecord
-end

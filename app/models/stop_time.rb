@@ -1,2 +1,0 @@
-class StopTime < ApplicationRecord
-end

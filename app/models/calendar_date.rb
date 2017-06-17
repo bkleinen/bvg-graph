@@ -1,2 +1,0 @@
-class CalendarDate < ApplicationRecord
-end
