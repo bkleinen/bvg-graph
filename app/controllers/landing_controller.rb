@@ -4,7 +4,7 @@ class LandingController < ApplicationController
   def index
 
     all_ds = data_sources
-    clazzes =  all_ds.map{|ds2| ds2.clazz}
+    @clazzes =  all_ds.map{|ds2| c = ds2.clazz ; [c.pluralize, "#{c.constantize.table_name}_path"]}
 
   end
 end

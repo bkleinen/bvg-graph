@@ -1,5 +1,8 @@
 BVG Data
-
+<ul>
+<% @clazzes.each do | text, path | %>
 <li>
-  <%= link_to "Trips", helper.trips_path %>
+  <%= link_to text, send(path) %>
 </li>
+<% end %>
+</ul>
