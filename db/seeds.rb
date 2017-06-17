@@ -35,15 +35,15 @@ end
 
 calendar_date_fields = {service_identifier: :integer, date: :date, exception_type: :integer}
 calendar_date = DataSource.new(CalendarDate, 'db/data/calendar_dates.txt', calendar_date_fields)
-
+puts calendar_date
 #import_datasource(calendar_date)
 
 # "agency_id","agency_name","agency_url","agency_timezone","agency_lang","agency_phone"
 # 1,"S-Bahn Berlin GmbH","http://www.s-bahn-berlin.de","Europe/Berlin","de",""
 # rails g scaffold Agency agency_identifier:integer agency_name:string agency_url:string agency_timezone:string agency_lang:string agency_phone:string
 
-agency_fields =  { agency_identifier: :integer agency_name: :string, agency_url: :string, agency_timezone: :string, agency_lang: :string, agency_phone: :string }
-agency = DataSource.new(class: Agency, file:'db/data/agency.txt', fields: agency_fields)
+agency_fields =  { agency_identifier: :integer, agency_name: :string, agency_url: :string, agency_timezone: :string, agency_lang: :string, agency_phone: :string }
+agency = DataSource.new(Agency, 'db/data/agency.txt', agency_fields)
 import_datasource(agency)
 
 
@@ -52,8 +52,9 @@ import_datasource(agency)
 # 1,1,1,1,1,1,0,0,20170531,20171209
 # 2,0,0,0,0,0,1,0,20170531,20171209
 
-rails g scaffold Calendar service_identifier:string monday:integer tuesday:integer wednesday:integer thursday:integer friday:integer saturday:integer sunday:integer start_date:date end_date:date
+#rails g scaffold Calendar service_identifier:string monday:integer tuesday:integer wednesday:integer thursday:integer friday:integer saturday:integer sunday:integer start_date:date end_date:date
 
 calendar_fields = {service_identifier: :string, monday: :integer, tuesday: :integer, wednesday: :integer, thursday: :integer, friday: :integer, saturday: :integer, sunday: :integer, start_date: :date, end_date: :date}
-calendar = DataSource.new(class: Calendar, file:'db/data/calendar.txt',fields: calendar_fields)
+calendar = DataSource.new(Calendar, 'db/data/calendar.txt',calendar_fields)
+puts calendar
 #import_datasource(calendar)
