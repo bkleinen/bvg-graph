@@ -4,7 +4,7 @@ class CreateStopTimes < ActiveRecord::Migration[5.1]
       t.integer :trip_identifier
       t.time :arrival_time
       t.time :departure_time
-      t.integer :stop_identifier
+      t.string :stop_identifier
       t.integer :stop_sequence
       t.integer :pickup_type
       t.integer :drop_off_type

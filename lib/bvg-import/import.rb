@@ -2,9 +2,13 @@
 DataSource = Struct.new(:clazz,:file,:fields)
 
 module BVG
+  def scaffold_generator(ds)
+    fields = ds.fields.map{|f,t| "#{f.to_s}:#{t.to_s}"}.join(" ")
+    puts "rails generate scaffold #{ds.clazz} #{fields}"
+  end
   def import_datasource(ds)
     clazz = ds.clazz.constantize
-    clazz.constantize.destroy_all
+    clazz.destroy_all
     File.open(ds.file, "r") do |f|
       first_line = true
       f.each_line do |line|

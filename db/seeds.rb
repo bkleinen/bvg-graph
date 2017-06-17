@@ -1,4 +1,5 @@
 require "#{Rails.root}/lib/bvg-import/import.rb"
+include BVG
 
 data_sources = []
 # CalendarDate
@@ -39,15 +40,21 @@ data_sources << calendar
 # 69966914,4:07:42,4:07:42,060007102721,0,0,0,""
 # 69966914,4:08:54,4:09:24,060008101711,1,0,0,""
 
-stop_time_fields = {trip_identifier: :integer, arrival_time: :time, departure_time: :time, stop_identifier: :integer, stop_sequence: :integer, pickup_type: :integer, drop_off_type: :integer, stop_headsign: :string}
+stop_time_fields = {trip_identifier: :integer, arrival_time: :time, departure_time: :time, stop_identifier: :string, stop_sequence: :integer, pickup_type: :integer, drop_off_type: :integer, stop_headsign: :string}
 stop_time = DataSource.new('StopTime', 'db/data/stop_times.txt',stop_time_fields)
 data_sources << stop_time
 
-def scaffold_generator(ds)
-  fields = ds.fields.map{|f,t| "#{f.to_s}:#{t.to_s}"}.join(" ")
-  puts "rails generate scaffold #{ds.clazz} #{fields}"
-end
-puts scaffold_generator(stop_time)
+# Trip
+# "route_id","service_id","trip_id","trip_headsign","trip_short_name","direction_id","block_id","shape_id"
+# 10141_109,1,69966914,"S Wannsee Bhf","",1,,452
+# 10141_109,2,69966922,"S Wannsee Bhf","",1,,452
+
+trip_fields = {route_identifier: :string, service_id: :string, trip_id: :string, trip_headsign: :string, trip_short_name: :string, direction_identifier: :integer, block_identifier: :integer, shape_identifier: :integer }
+trip = DataSource.new('Trip','db/data/trip.txt',trip_fields)
+
+ds = trip
+#import_datasource(ds)
+puts scaffold_generator(ds)
 
 puts "all data sources: "
-puts data_sources.inspect
+#puts data_sources.inspect

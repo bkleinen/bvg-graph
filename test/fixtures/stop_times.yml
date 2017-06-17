@@ -2,9 +2,9 @@
 
 one:
   trip_identifier: 1
-  arrival_time: 2017-06-17 13:22:06
-  departure_time: 2017-06-17 13:22:06
-  stop_identifier: 1
+  arrival_time: 2017-06-17 13:27:55
+  departure_time: 2017-06-17 13:27:55
+  stop_identifier: MyString
   stop_sequence: 1
   pickup_type: 1
   drop_off_type: 1
@@ -12,9 +12,9 @@ one:
 
 two:
   trip_identifier: 1
-  arrival_time: 2017-06-17 13:22:06
-  departure_time: 2017-06-17 13:22:06
-  stop_identifier: 1
+  arrival_time: 2017-06-17 13:27:55
+  departure_time: 2017-06-17 13:27:55
+  stop_identifier: MyString
   stop_sequence: 1
   pickup_type: 1
   drop_off_type: 1
