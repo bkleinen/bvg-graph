@@ -2,7 +2,7 @@ FROM ruby:2.4-alpine
 
 ENV APP_HOME /usr/src/app
 
-EXPOSE 80
+EXPOSE 3000
 
 RUN set -ex \
   && apk add --no-cache libpq nodejs bash postgresql-dev \
