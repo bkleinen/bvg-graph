@@ -81,6 +81,15 @@ module BVG
     transfer_fields = {from_stop_id: :string, to_stop_id: :string, transfer_type: :integer,min_transfer_time: :integer, from_route_identifier: :string, to_route_identifier: :string, from_trip_id: :string, to_trip_id: :string }
     transfer = DataSource.new('Transfer','db/data/transfers.txt',transfer_fields)
     data_sources << transfer
+
+    # Stops
+    # "stop_id","stop_code","stop_name","stop_desc","stop_lat","stop_lon","location_type","parent_station"
+    # 000008012716,"","Rastow, Bahnhof",,"53.457379000000","11.431163000000",0,900000550215
+    # 000008012713,"","Rangsdorf, Bahnhof",,"52.294125000000","13.431112000000",0,900000245025
+    stop_fields = {stop_identifier: :string, stop_code: :string, stop_name: :string, stop_desc: :string, stop_lat: :decimal, stop_lon: :decimal, location_type: :integer, parent_station: :string}
+    stop = DataSource.new('Stop','db/data/stops.txt',stop_fields)
+    data_sources << stop
+
     return data_sources
-  end 
+  end
 end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :stops
   resources :transfers
   resources :shapes
   resources :routes

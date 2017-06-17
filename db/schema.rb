@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170617142302) do
+ActiveRecord::Schema.define(version: 20170617143724) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -81,6 +81,19 @@ ActiveRecord::Schema.define(version: 20170617142302) do
     t.integer "pickup_type"
     t.integer "drop_off_type"
     t.string "stop_headsign"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "stops", force: :cascade do |t|
+    t.string "stop_identifier"
+    t.string "stop_code"
+    t.string "stop_name"
+    t.string "stop_desc"
+    t.decimal "stop_lat"
+    t.decimal "stop_lon"
+    t.integer "location_type"
+    t.string "parent_station"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
