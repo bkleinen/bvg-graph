@@ -1,6 +1,5 @@
 
-DataSource = Struct.new(:clazz,:file,:fields)
-
+require "files_to_tables.rb"
 module BVG
   def scaffold_generator(ds)
     fields = ds.fields.map{|f,t| "#{f.to_s}:#{t.to_s}"}.join(" ")

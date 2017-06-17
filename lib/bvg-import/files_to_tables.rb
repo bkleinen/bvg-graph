@@ -1,4 +1,6 @@
+
 module BVG
+  DataSource = Struct.new(:clazz,:file,:fields)
   def data_sources
     data_sources = []
     # CalendarDate
@@ -9,7 +11,7 @@ module BVG
     #1,20170608,2
 
     calendar_date_fields = {service_identifier: :integer, date: :date, exception_type: :integer}
-    calendar_date = DataSource.new(CalendarDate, 'db/data/calendar_dates.txt', calendar_date_fields)
+    calendar_date = DataSource.new('CalendarDate', 'db/data/calendar_dates.txt', calendar_date_fields)
     data_sources << calendar_date
     #import_datasource(calendar_date)
 
@@ -18,7 +20,7 @@ module BVG
     # rails g scaffold Agency agency_identifier:integer agency_name:string agency_url:string agency_timezone:string agency_lang:string agency_phone:string
 
     agency_fields =  { agency_identifier: :integer, agency_name: :string, agency_url: :string, agency_timezone: :string, agency_lang: :string, agency_phone: :string }
-    agency = DataSource.new(Agency, 'db/data/agency.txt', agency_fields)
+    agency = DataSource.new('Agency', 'db/data/agency.txt', agency_fields)
     data_sources << agency
     #import_datasource(agency)
 
@@ -30,7 +32,7 @@ module BVG
     #rails g scaffold Calendar service_identifier:string monday:integer tuesday:integer wednesday:integer thursday:integer friday:integer saturday:integer sunday:integer start_date:date end_date:date
 
     calendar_fields = {service_identifier: :string, monday: :integer, tuesday: :integer, wednesday: :integer, thursday: :integer, friday: :integer, saturday: :integer, sunday: :integer, start_date: :date, end_date: :date}
-    calendar = DataSource.new(Calendar, 'db/data/calendar.txt',calendar_fields)
+    calendar = DataSource.new('Calendar', 'db/data/calendar.txt',calendar_fields)
     data_sources << calendar
     #import_datasource(calendar)
 

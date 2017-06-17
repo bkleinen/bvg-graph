@@ -1,9 +1,9 @@
-require "#{Rails.root}/lib/bvg-import/import.rb"
-require "#{Rails.root}/lib/bvg-import/files_to_tables.rb"
+require "import.rb"
+
+#require "#{Rails.root}/lib/bvg-import/import.rb"
+#require "#{Rails.root}/lib/bvg-import/files_to_tables.rb"
 
 include BVG
-
-
 
 all_ds = data_sources
 
