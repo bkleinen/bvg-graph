@@ -1,0 +1,57 @@
+<%= form_with(model: route, local: true) do |form| %>
+  <% if route.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(route.errors.count, "error") %> prohibited this route from being saved:</h2>
+
+      <ul>
+      <% route.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :route_identifier %>
+    <%= form.number_field :route_identifier, id: :route_route_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agency_identifier %>
+    <%= form.number_field :agency_identifier, id: :route_agency_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :route_short_name %>
+    <%= form.text_field :route_short_name, id: :route_route_short_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :route_long_name %>
+    <%= form.text_field :route_long_name, id: :route_route_long_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :route_type %>
+    <%= form.number_field :route_type, id: :route_route_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :route_color %>
+    <%= form.text_field :route_color, id: :route_route_color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :route_text_color %>
+    <%= form.text_field :route_text_color, id: :route_route_text_color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :route_desc %>
+    <%= form.text_field :route_desc, id: :route_route_desc %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

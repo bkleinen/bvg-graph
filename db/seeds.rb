@@ -50,11 +50,31 @@ data_sources << stop_time
 # 10141_109,2,69966922,"S Wannsee Bhf","",1,,452
 
 trip_fields = {route_identifier: :string, service_id: :string, trip_id: :string, trip_headsign: :string, trip_short_name: :string, direction_identifier: :integer, block_identifier: :integer, shape_identifier: :integer }
-trip = DataSource.new('Trip','db/data/trip.txt',trip_fields)
+trip = DataSource.new('Trip','db/data/trips.txt',trip_fields)
+data_sources << trip
 
-ds = trip
+
+# Route
+# "route_id","agency_id","route_short_name","route_long_name","route_type","route_color","route_text_color","route_desc"
+# 10141_109,1,"S1","",109,"","",""
+# 10142_109,1,"S1","",109,"","",""
+# 10143_109,1,"S2","",109,"","",""
+route_fields = {route_identifier: :integer, agency_identifier: :integer, route_short_name: :string,route_long_name: :string, route_type: :integer, route_color: :string, route_text_color: :string, route_desc: :string }
+route = DataSource.new('Route','db/data/routes.txt',route_fields)
+data_sources << route
+
+# Shape
+"shape_id","shape_pt_lat","shape_pt_lon","shape_pt_sequence"
+284,52.296635,13.631472,0
+284,52.296640,13.631451,1
+
+shape_fields = {shape_identifier: :integer, shape_pt_lat: :decimal, shape_pt_lon: :decimal, shape_pt_sequence: :integer}
+shape = DataSource.new('Shape','db/data/shapes.txt',shape_fields)
+data_sources << shape
+
+ds = shape
 #import_datasource(ds)
 puts scaffold_generator(ds)
 
 puts "all data sources: "
-#puts data_sources.inspect
+puts data_sources.inspect

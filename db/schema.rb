@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170617132755) do
+ActiveRecord::Schema.define(version: 20170617135435) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,19 @@ ActiveRecord::Schema.define(version: 20170617132755) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "routes", force: :cascade do |t|
+    t.integer "route_identifier"
+    t.integer "agency_identifier"
+    t.string "route_short_name"
+    t.string "route_long_name"
+    t.integer "route_type"
+    t.string "route_color"
+    t.string "route_text_color"
+    t.string "route_desc"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "stop_times", force: :cascade do |t|
     t.integer "trip_identifier"
     t.time "arrival_time"
@@ -59,6 +72,19 @@ ActiveRecord::Schema.define(version: 20170617132755) do
     t.integer "pickup_type"
     t.integer "drop_off_type"
     t.string "stop_headsign"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "trips", force: :cascade do |t|
+    t.string "route_identifier"
+    t.string "service_id"
+    t.string "trip_id"
+    t.string "trip_headsign"
+    t.string "trip_short_name"
+    t.integer "direction_identifier"
+    t.integer "block_identifier"
+    t.integer "shape_identifier"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
