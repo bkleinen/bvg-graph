@@ -1,0 +1,529 @@
+S Wannsee Bhf (Berlin), 060053301433
+S Nikolassee (Berlin), 060052200882
+S Schlachtensee (Berlin), 060050355872
+S Mexikoplatz (Berlin), 060050301872
+S Zehlendorf (Berlin), 060049201862
+S Sundgauer Str. (Berlin), 060049202852
+S Lichterfelde West (Berlin), 060066101852
+S Botanischer Garten (Berlin), 060066102852
+S+U Rathaus Steglitz (Berlin), 060062202842
+S Feuerbachstr. (Berlin), 060063101842
+S Friedenau (Berlin), 060060101832
+S Schöneberg (Berlin), 060054104822
+S Julius-Leber-Brücke (Berlin), 060057104812
+S+U Yorckstr. S1 U7 (Berlin), 060057102802
+S Anhalter Bahnhof (Berlin), 060012101473
+S+U Potsdamer Platz Bhf (Berlin), 060100020454
+S+U Brandenburger Tor (Berlin), 060100025432
+S+U Friedrichstr. Bhf (Berlin), 060100000432
+S Oranienburger Str. (Berlin), 060100007432
+S Nordbahnhof (Berlin), 060007104414
+S Humboldthain (Berlin), 060008101712
+S+U Gesundbrunnen Bhf (Berlin), 060007102724
+S Bornholmer Str. (Berlin), 060110011614
+S Wollankstr. (Berlin), 060130003653
+S Schönholz (Berlin), 060085201683
+S Wilhelmsruh (Berlin), 060084101101
+S+U Wittenau (Berlin), 060096101111
+S Waidmannslust (Berlin), 060094101121
+S Hermsdorf (Berlin), 060093201131
+S Frohnau (Berlin), 060092201131
+S Hohen Neuendorf, 060200009003
+S Birkenwerder Bhf, 060200008004
+S Borgsdorf, 060200007101
+S Lehnitz, 060200006101
+S Oranienburg Bhf, 060200005032
+S Frohnau (Berlin), 060092201132
+S Hermsdorf (Berlin), 060093201132
+S Waidmannslust (Berlin), 060094101122
+S+U Wittenau (Berlin), 060096101112
+S Wilhelmsruh (Berlin), 060084101102
+S Schönholz (Berlin), 060085201684
+S Wollankstr. (Berlin), 060130003654
+S Bornholmer Str. (Berlin), 060110011611
+S+U Gesundbrunnen Bhf (Berlin), 060007102721
+S Humboldthain (Berlin), 060008101711
+S Nordbahnhof (Berlin), 060007104411
+S Oranienburger Str. (Berlin), 060100007431
+S+U Friedrichstr. Bhf (Berlin), 060100000431
+S+U Brandenburger Tor (Berlin), 060100025441
+S+U Potsdamer Platz Bhf (Berlin), 060100020451
+S Anhalter Bahnhof (Berlin), 060012101472
+S+U Yorckstr. S1 U7 (Berlin), 060057102801
+S Julius-Leber-Brücke (Berlin), 060057104811
+S Schöneberg (Berlin), 060054104821
+S Friedenau (Berlin), 060060101831
+S Feuerbachstr. (Berlin), 060063101841
+S+U Rathaus Steglitz (Berlin), 060062202841
+S Botanischer Garten (Berlin), 060066102851
+S Lichterfelde West (Berlin), 060066101851
+S Sundgauer Str. (Berlin), 060049202851
+S Zehlendorf (Berlin), 060049201861
+S Mexikoplatz (Berlin), 060050301871
+S Schlachtensee (Berlin), 060050355871
+S Nikolassee (Berlin), 060052200881
+S Wannsee Bhf (Berlin), 060053301432
+S Blankenfelde (TF) Bhf, 060250006003
+S Mahlow, 060250007003
+S Lichtenrade (Berlin), 060074201001
+S Schichauweg (Berlin), 060074202002
+S Buckower Chaussee (Berlin), 060072101002
+S Marienfelde (Berlin), 060073101002
+S Attilastr. (Berlin), 060068301002
+S Priesterweg (Berlin), 060058102522
+S Südkreuz Bhf (Berlin), 060058101502
+S+U Yorckstr. S2 S25 U7 (Berlin), 060058103482
+S Anhalter Bahnhof (Berlin), 060012101474
+S Bornholmer Str. (Berlin), 060110011613
+S+U Pankow (Berlin), 060130002641
+S Pankow-Heinersdorf (Berlin), 060130001002
+S Blankenburg (Berlin), 060142001004
+S Karow Bhf (Berlin), 060143001101
+S Buch (Berlin), 060135001111
+S Röntgental, 060330006121
+S Zepernick, 060330005122
+S Bernau-Friedenstal, 060330022131
+S Bernau Bhf, 060330004131
+S Bernau Bhf, 060330004132
+S Zepernick, 060330005121
+S Buch (Berlin), 060135001112
+S Karow Bhf (Berlin), 060143001102
+S Blankenburg (Berlin), 060142001001
+S Pankow-Heinersdorf (Berlin), 060130001001
+S+U Pankow (Berlin), 060130002642
+S Bornholmer Str. (Berlin), 060110011612
+S+U Yorckstr. S2 S25 U7 (Berlin), 060058103481
+S Südkreuz Bhf (Berlin), 060058101501
+S Priesterweg (Berlin), 060058102521
+S Attilastr. (Berlin), 060068301001
+S Marienfelde (Berlin), 060073101001
+S Buckower Chaussee (Berlin), 060072101001
+S Schichauweg (Berlin), 060074202001
+S Lichtenrade (Berlin), 060074201002
+S Teltow Stadt, 060220114642
+S Lichterfelde Süd (Berlin), 060064201632
+S Osdorfer Str. (Berlin), 060064256622
+S Lichterfelde Ost Bhf (Berlin), 060064301622
+S Lankwitz (Berlin), 060067221602
+S Südende (Berlin), 060063452532
+S Priesterweg (Berlin), 060058102524
+S Alt-Reinickendorf (Berlin), 060085105001
+S+U Karl-Bonhoeffer-Nervenklinik (Berlin), 060096458002
+S Eichborndamm (Berlin), 060096405002
+S Tegel (Berlin), 060089303001
+S Schulzendorf (Berlin), 060091205001
+S Heiligensee (Berlin), 060091203001
+S Hennigsdorf (Berlin), 060200000105
+S Grunewald (Berlin), 060048101204
+S Westkreuz (Berlin), 060024102373
+S Charlottenburg Bhf (Berlin), 060024101336
+S Savignyplatz (Berlin), 060024203303
+S+U Zoologischer Garten Bhf (Berlin), 060023201255
+S Tiergarten (Berlin), 060003103233
+S Bellevue (Berlin), 060003102223
+S+U Berlin Hauptbahnhof, 060003201213
+S+U Friedrichstr. Bhf (Berlin), 060100001755
+S Hackescher Markt (Berlin), 060100002733
+S+U Alexanderplatz Bhf (Berlin), 060100003723
+S+U Jannowitzbrücke (Berlin), 060100004703
+S Ostbahnhof (Berlin), 060120005008
+S+U Warschauer Str. (Berlin), 060120004623
+S Ostkreuz Bhf (Berlin), 060120003653
+S Rummelsburg (Berlin), 060160001002
+S Betriebsbahnhof Rummelsburg (Berlin), 060160002803
+S Karlshorst Bhf (Berlin), 060162001813
+S Wuhlheide (Berlin), 060180002823
+S Köpenick (Berlin), 060180001833
+S Hirschgarten (Berlin), 060182001843
+S Friedrichshagen (Berlin), 060182002853
+S Rahnsdorf (Berlin), 060183001863
+S Wilhelmshagen (Berlin), 060183002863
+S Erkner Bhf, 060310004905
+S Erkner Bhf, 060310004906
+S Wilhelmshagen (Berlin), 060183002864
+S Rahnsdorf (Berlin), 060183001864
+S Friedrichshagen (Berlin), 060182002854
+S Hirschgarten (Berlin), 060182001844
+S Köpenick (Berlin), 060180001834
+S Wuhlheide (Berlin), 060180002824
+S Karlshorst Bhf (Berlin), 060162001814
+S Betriebsbahnhof Rummelsburg (Berlin), 060160002804
+S Rummelsburg (Berlin), 060160001001
+S Ostkreuz Bhf (Berlin), 060120003652
+S+U Warschauer Str. (Berlin), 060120004621
+S Ostbahnhof (Berlin), 060120005010
+S+U Jannowitzbrücke (Berlin), 060100004704
+S+U Alexanderplatz Bhf (Berlin), 060100003724
+S Hackescher Markt (Berlin), 060100002734
+S+U Friedrichstr. Bhf (Berlin), 060100001756
+S+U Berlin Hauptbahnhof, 060003201214
+S Bellevue (Berlin), 060003102224
+S Tiergarten (Berlin), 060003103234
+S+U Zoologischer Garten Bhf (Berlin), 060023201256
+S Savignyplatz (Berlin), 060024203304
+S Charlottenburg Bhf (Berlin), 060024101338
+S Westkreuz (Berlin), 060024102372
+S Grunewald (Berlin), 060048101202
+S Flughafen Berlin-Schönefeld Bhf, 060260005671
+S Grünbergallee (Berlin), 060196001652
+S Altglienicke (Berlin), 060195510642
+S Adlershof (Berlin), 060193002004
+S Betriebsbahnhof Schöneweide (Berlin), 060193001004
+S Schöneweide Bhf (Berlin), 060192001006
+S Baumschulenweg (Berlin), 060191001004
+S Köllnische Heide (Berlin), 060077155441
+S+U Neukölln (Berlin), 060078201461
+S+U Hermannstr. (Berlin), 060079221471
+S+U Tempelhof (Berlin), 060068201511
+S Südkreuz Bhf (Berlin), 060058100531
+S Schöneberg (Berlin), 060054100601
+S+U Innsbrucker Platz (Berlin), 060054105611
+S+U Bundesplatz (Berlin), 060044202621
+S Westend (Berlin), 060026207812
+S Messe Nord/ICC (Berlin), 060024106802
+S Westkreuz (Berlin), 060024100802
+S Halensee (Berlin), 060040101712
+S Hohenzollerndamm (Berlin), 060044101702
+S+U Heidelberger Platz (Berlin), 060045102632
+S+U Bundesplatz (Berlin), 060044202622
+S+U Innsbrucker Platz (Berlin), 060054105612
+S Schöneberg (Berlin), 060054100602
+S Südkreuz Bhf (Berlin), 060058100532
+S+U Tempelhof (Berlin), 060068201512
+S+U Hermannstr. (Berlin), 060079221472
+S+U Neukölln (Berlin), 060078201462
+S Köllnische Heide (Berlin), 060077155442
+S Baumschulenweg (Berlin), 060191001005
+S Schöneweide Bhf (Berlin), 060192001004
+S Betriebsbahnhof Schöneweide (Berlin), 060193001003
+S Adlershof (Berlin), 060193002003
+S Grünau (Berlin), 060186001811
+S Eichwalde, 060260004873
+S Zeuthen, 060260003883
+S Wildau, 060260002904
+S Königs Wusterhausen Bhf, 060260001002
+S Spandau Bhf (Berlin), 060029101731
+S Stresow (Berlin), 060199018712
+S Pichelsberg (Berlin), 060025424461
+S Olympiastadion (Berlin), 060025321431
+S Heerstr. (Berlin), 060026105401
+S Messe Süd (Berlin), 060025423401
+S Westkreuz (Berlin), 060024102374
+S Nöldnerplatz (Berlin), 060160003001
+S+U Lichtenberg Bhf (Berlin), 060160004001
+S Friedrichsfelde Ost (Berlin), 060171002001
+S Biesdorf (Berlin), 060171001002
+S+U Wuhletal (Berlin), 060175001012
+S Kaulsdorf (Berlin), 060175002002
+S Mahlsdorf (Berlin), 060176001003
+S Birkenstein, 060320026002
+S Hoppegarten, 060320008004
+S Neuenhagen, 060320007001
+S Fredersdorf, 060320006015
+S Petershagen Nord, 060320005001
+S Strausberg Bhf, 060320004008
+S Hegermühle, 060320003001
+S Strausberg Stadt, 060320002001
+S Strausberg Nord, 060320001001
+S Ostbahnhof (Berlin), 060120005009
+S+U Warschauer Str. (Berlin), 060120004622
+S Ostkreuz Bhf (Berlin), 060120003654
+S Mahlsdorf (Berlin), 060176001001
+S Fredersdorf, 060320006016
+S Birkenstein, 060320026001
+S Mahlsdorf (Berlin), 060176001002
+S Kaulsdorf (Berlin), 060175002001
+S+U Wuhletal (Berlin), 060175001011
+S Biesdorf (Berlin), 060171001001
+S Friedrichsfelde Ost (Berlin), 060171002002
+S+U Lichtenberg Bhf (Berlin), 060160004002
+S Nöldnerplatz (Berlin), 060160003002
+S Ahrensfelde Bhf (Berlin), 060170004041
+S Mehrower Allee (Berlin), 060170003002
+S Raoul-Wallenberg-Str. (Berlin), 060170002002
+S Marzahn (Berlin), 060170001332
+S Poelchaustr. (Berlin), 060170005002
+S Springpfuhl (Berlin), 060171003020
+S Charlottenburg Bhf (Berlin), 060024101337
+S Westkreuz (Berlin), 060024102371
+S Grunewald (Berlin), 060048101201
+S Nikolassee (Berlin), 060052201423
+S Wannsee Bhf (Berlin), 060053301431
+S Griebnitzsee Bhf, 060230003822
+S Babelsberg, 060230000842
+S Potsdam Hauptbahnhof, 060023005896
+S Ahrensfelde Bhf (Berlin), 060170004042
+S Ostkreuz Bhf (Berlin), 060120003008
+S+U Warschauer Str. (Berlin), 060120004624
+S Ostbahnhof (Berlin), 060120005011
+S Potsdam Hauptbahnhof, 060023005897
+S Springpfuhl (Berlin), 060171003021
+S Gehrenseestr. (Berlin), 060152002051
+S Hohenschönhausen Bhf (Berlin), 060152001001
+S Wartenberg (Berlin), 060151001012
+S Wartenberg (Berlin), 060151001011
+S Hohenschönhausen Bhf (Berlin), 060152001002
+S Gehrenseestr. (Berlin), 060152002052
+S Messe Süd (Berlin), 060025423402
+S Heerstr. (Berlin), 060026105402
+S Olympiastadion (Berlin), 060025321432
+S Pichelsberg (Berlin), 060025424462
+S Birkenwerder Bhf, 060200008006
+S Hohen Neuendorf, 060200009004
+S Bergfelde, 060200011001
+S Schönfließ, 060200012008
+S Mühlenbeck-Mönchmühle, 060200013006
+S+U Schönhauser Allee (Berlin), 060110001771
+S Prenzlauer Allee (Berlin), 060110002781
+S Greifswalder Str. (Berlin), 060110003511
+S Landsberger Allee (Berlin), 060110004531
+S Storkower Str. (Berlin), 060110012541
+S+U Frankfurter Allee (Berlin), 060120001541
+S Ostkreuz Bhf (Berlin), 060120901551
+S Treptower Park (Berlin), 060190001573
+S Plänterwald (Berlin), 060191002003
+S Baumschulenweg (Berlin), 060191001003
+S Schöneweide Bhf (Berlin), 060192001003
+S Altglienicke (Berlin), 060195510641
+S Grünbergallee (Berlin), 060196001651
+S Flughafen Berlin-Schönefeld Bhf, 060260005672
+S+U Heidelberger Platz (Berlin), 060045102631
+S Hohenzollerndamm (Berlin), 060044101701
+S Halensee (Berlin), 060040101711
+S Westkreuz (Berlin), 060024100801
+S Messe Nord/ICC (Berlin), 060024106801
+S Westend (Berlin), 060026207811
+S+U Jungfernheide Bhf (Berlin), 060020201955
+S Beusselstr. (Berlin), 060020202811
+S+U Westhafen (Berlin), 060001201821
+S+U Wedding (Berlin), 060009104841
+S+U Gesundbrunnen Bhf (Berlin), 060007102723
+S Treptower Park (Berlin), 060190001571
+S Sonnenallee (Berlin), 060077106401
+S Sonnenallee (Berlin), 060077106402
+S Treptower Park (Berlin), 060190001572
+S Ostkreuz Bhf (Berlin), 060120901552
+S+U Frankfurter Allee (Berlin), 060120001542
+S Storkower Str. (Berlin), 060110012542
+S Landsberger Allee (Berlin), 060110004532
+S Greifswalder Str. (Berlin), 060110003512
+S Prenzlauer Allee (Berlin), 060110002782
+S+U Schönhauser Allee (Berlin), 060110001772
+S+U Gesundbrunnen Bhf (Berlin), 060007102722
+S+U Wedding (Berlin), 060009104842
+S+U Westhafen (Berlin), 060001201822
+S Beusselstr. (Berlin), 060020202812
+S+U Jungfernheide Bhf (Berlin), 060020201956
+S Oberspree (Berlin), 060192002001
+S Spindlersfeld (Berlin), 060180003001
+S Plänterwald (Berlin), 060191002004
+S Treptower Park (Berlin), 060190001574
+S Wannsee Bhf (Berlin), 060053301434
+S+U Potsdamer Platz Bhf (Berlin), 060100020452
+S Priesterweg (Berlin), 060058102523
+S Südende (Berlin), 060063452531
+S Lichterfelde Ost Bhf (Berlin), 060064301621
+S Osdorfer Str. (Berlin), 060064256621
+S Lichterfelde Süd (Berlin), 060064201631
+S Teltow Stadt, 060220114641
+S Zeuthen, 060260003884
+S Eichwalde, 060260004874
+S Grünau (Berlin), 060186001814
+S Schöneweide Bhf (Berlin), 060192001005
+S Grünau (Berlin), 060186001812
+S Olympiastadion (Berlin), 060025321436
+S+U Warschauer Str. (Berlin), 070201012101
+U Schlesisches Tor (Berlin), 070201012201
+U Görlitzer Bahnhof (Berlin), 070201012301
+U Kottbusser Tor (Berlin), 070201012401
+U Prinzenstr. (Berlin), 070201012501
+U Hallesches Tor (Berlin), 070201012601
+U Möckernbrücke (Berlin), 070201012701
+U Gleisdreieck (Berlin), 070201012801
+U Kurfürstenstr. (Berlin), 070201012901
+U Nollendorfplatz (Berlin), 070201013001
+U Wittenbergplatz (Berlin), 070201013101
+U Kurfürstendamm (Berlin), 070201013201
+U Uhlandstr. (Berlin), 070201013301
+S+U Pankow (Berlin), 070201022001
+U Vinetastr. (Berlin), 070201022101
+S+U Schönhauser Allee (Berlin), 070201022201
+U Eberswalder Str. (Berlin), 070201022301
+U Senefelderplatz (Berlin), 070201022401
+U Rosa-Luxemburg-Platz (Berlin), 070201022501
+S+U Alexanderplatz (Berlin) [U2], 070201022601
+U Klosterstr. (Berlin), 070201022701
+U Märkisches Museum (Berlin), 070201022801
+U Spittelmarkt (Berlin), 070201022901
+U Hausvogteiplatz (Berlin), 070201023001
+Berlin, U Stadtmitte U2, 070201023101
+U Mohrenstr. (Berlin), 070201023201
+S+U Potsdamer Platz (Bln) [U2], 070201023301
+U Mendelssohn-Bartholdy-Park (Berlin), 070201023401
+U Gleisdreieck (Berlin), 070201023501
+U Bülowstr. (Berlin), 070201023601
+U Nollendorfplatz (Berlin), 070201023701
+U Wittenbergplatz (Berlin), 070201023803
+S+U Zoologischer Garten Bhf (Berlin), 070201023901
+U Ernst-Reuter-Platz (Berlin), 070201024001
+U Deutsche Oper (Berlin), 070201024101
+U Bismarckstr. (Berlin), 070201024201
+U Sophie-Charlotte-Platz (Berlin), 070201024301
+U Kaiserdamm (Berlin), 070201024401
+Berlin, U Theodor-Heuss-Platz, 070201024501
+U Neu-Westend (Berlin), 070201024601
+U Olympia-Stadion (Berlin), 070201024701
+U Ruhleben (Berlin), 070201024802
+U Nollendorfplatz (Berlin), 070201042103
+U Augsburger Str. (Berlin), 070201033201
+U Spichernstr. (Berlin), 070201033301
+U Hohenzollernplatz (Berlin), 070201033401
+U Fehrbelliner Platz (Berlin), 070201033501
+S+U Heidelberger Platz (Berlin), 070201033601
+U Rüdesheimer Platz (Berlin), 070201033701
+U Breitenbachplatz (Berlin), 070201033801
+U Podbielskiallee (Berlin), 070201033901
+U Dahlem-Dorf (Berlin), 070201034001
+U Freie Universität (Thielplatz) (Berlin), 070201034101
+U Oskar-Helene-Heim (Berlin), 070201034201
+U Onkel Toms Hütte (Berlin), 070201034301
+U Krumme Lanke (Berlin), 070201034402
+S+U Innsbrucker Platz (Berlin), 070201042502
+U Rathaus Schöneberg (Berlin), 070201042402
+U Bayerischer Platz (Berlin), 070201042302
+U Viktoria-Luise-Platz (Berlin), 070201042202
+U Nollendorfplatz (Berlin), 070201042104
+U Hönow (Berlin), 070201052101
+U Louis-Lewin-Str. (Berlin), 070201052201
+U Hellersdorf (Berlin), 070201052301
+U Cottbusser Platz (Berlin), 070201052401
+U Kienberg (Gärten der Welt) (Berlin), 070201052501
+U Kaulsdorf-Nord (Berlin), 070201052601
+S+U Wuhletal (Berlin), 070201052701
+U Elsterwerdaer Platz (Berlin), 070201052801
+U Biesdorf-Süd (Berlin), 070201052901
+U Tierpark (Berlin), 070201053001
+U Friedrichsfelde (Berlin), 070201053101
+S+U Lichtenberg (Berlin) [U5], 070201053201
+U Magdalenenstr. (Berlin), 070201053301
+S+U Frankfurter Allee (Berlin), 070201053401
+U Samariterstr. (Berlin), 070201053501
+U Frankfurter Tor (Berlin), 070201053601
+U Weberwiese (Berlin), 070201053701
+U Strausberger Platz (Berlin), 070201053801
+U Schillingstr. (Berlin), 070201053901
+S+U Alexanderplatz (Berlin) [U5], 070201054001
+S+U Brandenburger Tor (Berlin), 070201054401
+U Bundestag (Berlin), 070201054501
+S+U Berlin Hauptbahnhof, 070201054601
+U Alt-Tegel (Berlin), 070201062101
+U Borsigwerke (Berlin), 070201062201
+U Holzhauser Str. (Berlin), 070201062301
+U Otisstr. (Berlin), 070201062401
+U Scharnweberstr. (Berlin), 070201062501
+U Kurt-Schumacher-Platz (Berlin), 070201062601
+U Afrikanische Str. (Berlin), 070201062701
+U Rehberge (Berlin), 070201062801
+U Seestr. (Berlin), 070201062901
+U Leopoldplatz (Berlin), 070201063001
+S+U Wedding (Berlin), 070201063101
+U Reinickendorfer Str. (Berlin), 070201063201
+U Schwartzkopffstr. (Berlin), 070201063301
+U Naturkundemuseum (Berlin), 070201063401
+U Oranienburger Tor (Berlin), 070201063501
+S+U Friedrichstr. Bhf (Berlin), 070201063601
+U Französische Str. (Berlin), 070201063701
+U Stadtmitte (Berlin), 070201063801
+U Kochstr./Checkpoint Charlie (Berlin), 070201063901
+U Hallesches Tor (Berlin), 070201064001
+U Mehringdamm (Berlin), 070201064101
+U Platz der Luftbrücke (Berlin), 070201064201
+U Paradestr. (Berlin), 070201064301
+S+U Tempelhof (Berlin), 070201064401
+U Alt-Tempelhof (Berlin), 070201064501
+U Kaiserin-Augusta-Str. (Berlin), 070201064601
+U Ullsteinstr. (Berlin), 070201064701
+U Westphalweg (Berlin), 070201064801
+U Alt-Mariendorf (Berlin), 070201064902
+S+U Rathaus Spandau (Berlin), 070201072101
+U Altstadt Spandau (Berlin), 070201072201
+U Zitadelle (Berlin), 070201072301
+U Haselhorst (Berlin), 070201072401
+U Paulsternstr. (Berlin), 070201072501
+U Rohrdamm (Berlin), 070201072601
+U Siemensdamm (Berlin), 070201072701
+U Halemweg (Berlin), 070201072801
+U Jakob-Kaiser-Platz (Berlin), 070201072901
+S+U Jungfernheide Bhf (Berlin), 070201073001
+U Mierendorffplatz (Berlin), 070201073101
+U Richard-Wagner-Platz (Berlin), 070201073201
+U Bismarckstr. (Berlin), 070201073301
+U Wilmersdorfer Str. (Berlin), 070201073401
+U Adenauerplatz (Berlin), 070201073501
+U Konstanzer Str. (Berlin), 070201073601
+U Fehrbelliner Platz (Berlin), 070201073701
+U Blissestr. (Berlin), 070201073801
+U Berliner Str. (Berlin), 070201073901
+U Bayerischer Platz (Berlin), 070201074001
+U Eisenacher Str. (Berlin), 070201074101
+U Kleistpark (Berlin), 070201074201
+S+U Yorckstr. (Berlin), 070201074301
+U Möckernbrücke (Berlin), 070201074401
+U Mehringdamm (Berlin), 070201074503
+U Gneisenaustr. (Berlin), 070201074601
+U Südstern (Berlin), 070201074701
+U Hermannplatz (Berlin), 070201074801
+U Rathaus Neukölln (Berlin), 070201074901
+U Karl-Marx-Str. (Berlin), 070201075001
+S+U Neukölln (Berlin) [U7], 070201075101
+U Grenzallee (Berlin), 070201075201
+U Blaschkoallee (Berlin), 070201075301
+U Parchimer Allee (Berlin), 070201075401
+U Britz-Süd (Berlin), 070201075501
+U Johannisthaler Chaussee (Berlin), 070201075601
+U Lipschitzallee (Berlin), 070201075701
+U Wutzkyallee (Berlin), 070201075801
+U Zwickauer Damm (Berlin), 070201075901
+U Rudow (Berlin), 070201076001
+S+U Wittenau (Berlin) [U8], 070201082101
+U Rathaus Reinickendorf (Berlin), 070201082301
+S+U Karl-Bonhoeffer-Nervenklinik (Berlin), 070201082401
+U Lindauer Allee (Berlin), 070201082501
+U Paracelsus-Bad (Berlin), 070201082601
+U Residenzstr. (Berlin), 070201082701
+U Franz-Neumann-Platz (Berlin), 070201082801
+U Osloer Str. (Berlin), 070201082901
+U Pankstr. (Berlin), 070201083001
+S+U Gesundbrunnen Bhf (Berlin), 070201083101
+U Voltastr. (Berlin), 070201083201
+U Bernauer Str. (Berlin), 070201083301
+U Rosenthaler Platz (Berlin), 070201083401
+U Weinmeisterstr. (Berlin), 070201083501
+S+U Alexanderplatz (Berlin) [U8], 070201083601
+S+U Jannowitzbrücke (Berlin), 070201083701
+U Heinrich-Heine-Str. (Berlin), 070201083801
+U Moritzplatz (Berlin), 070201083901
+U Kottbusser Tor (Berlin), 070201084001
+U Schönleinstr. (Berlin), 070201084101
+U Hermannplatz (Berlin), 070201084201
+U Boddinstr. (Berlin), 070201084301
+U Leinestr. (Berlin), 070201084401
+S+U Hermannstr. (Berlin), 070201084502
+U Osloer Str. (Berlin), 070201092101
+U Nauener Platz (Berlin), 070201092201
+U Leopoldplatz (Berlin), 070201092301
+U Amrumer Str. (Berlin), 070201092401
+S+U Westhafen (Berlin), 070201092501
+U Birkenstr. (Berlin), 070201092601
+U Turmstr. (Berlin), 070201092701
+U Hansaplatz (Berlin), 070201092801
+S+U Zoologischer Garten Bhf (Berlin), 070201092901
+U Kurfürstendamm (Berlin), 070201093001
+U Spichernstr. (Berlin), 070201093101
+U Güntzelstr. (Berlin), 070201093201
+U Berliner Str. (Berlin), 070201093301
+S+U Bundesplatz (Berlin), 070201093401
+U Friedrich-Wilhelm-Platz (Berlin), 070201093501
+U Walther-Schreiber-Platz (Berlin), 070201093601
+U Schloßstr. (Berlin), 070201093703
+S+U Rathaus Steglitz (Berlin) [U9], 070201093801

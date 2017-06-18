@@ -1,0 +1,16 @@
+<% if @graph %>
+  <h3>Graph</h3>
+    <pre>
+<%= @graph.to_s %>
+    </pre>
+  </h3>
+
+  <h3>Node Names</h3>
+    <pre>
+<%= @graph.nodes_names_to_s %>
+    </pre>
+    <h3>Stations</h3>
+      <pre>
+  <%= @graph.stations %>
+      </pre>
+<% end %>

@@ -12,6 +12,7 @@ class TripsController < ApplicationController
   def show
     @stop_times = @trip.stop_times
     @hops = @trip.hops
+    @graph = Hop.graph(@hops)
   end
 
   # GET /trips/new

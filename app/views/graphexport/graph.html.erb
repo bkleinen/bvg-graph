@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+<h1>Hops<h2>
+  <ul>
+  <% @hops.each do | hop | %>
+     <li><%= "#{hop.from.stop_name} - #{hop.to.stop_name} - #{hop.time} sec " %> </li>
+  <% end %>
+  </ul>
+
+<%= render 'shared/graph' %>

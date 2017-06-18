@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   resources :agencies
   root 'landing#index'
   get 'graph', to: 'graphexport#index'
+  get 'graph_export', to: 'graphexport#graph'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
