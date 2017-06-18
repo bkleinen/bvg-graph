@@ -78,15 +78,15 @@ Route:
    id: 'mapbox.streets'
  }).addTo(mymap);
 
- var polygon = L.polygon([
-   [51.509, -0.08],
-   [51.503, -0.06],
-   [51.51, -0.047]
-]).addTo(mymap);
+
+// http://leafletjs.com/reference-1.0.3.html#polyline
+var trip_route = L.polyline(<%=@route_s%>,{color: 'violet', weight: 8}).addTo(mymap);
+
+
+//map.fitBounds(trip_route.getBounds());
 
 
 
-var trip_route = L.polygon(<%=@route_s%>).addTo(mymap);
 </script>
 
 
