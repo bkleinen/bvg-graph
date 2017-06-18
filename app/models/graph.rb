@@ -2,12 +2,18 @@ class Graph
   def initialize
     @adjacencies = Hash.new { |hash, key| hash[key] = Hash.new }
     @node_names = Hash.new
+    @node_ids = Hash.new { |hash, key| hash[key] = [] }
   end
   def add_edge(from_id,from_name,to_id,to_name,weight)
-    @adjacencies[from_id][to_id] = weight.to_s
-    @adjacencies[to_id][from_id] = weight.to_s
+    @adjacencies[from_name][to_name] = weight.to_s
+    @adjacencies[to_name][from_name] = weight.to_s
     @node_names[from_id] = from_name
     @node_names[to_id] = to_name
+    @node_ids[from_name] << from_id
+    @node_ids[to_name] << to_id
+  end
+  def node_id(name)
+    @node_ids[name].first
   end
   def outgoing_edges(from)
     @adjacencies[from]
@@ -15,16 +21,19 @@ class Graph
   def node_name(node)
     @node_names[node]
   end
-  def nodes
+  def node_ids
+    @node_ids.keys
+  end
+  def node_names
     @adjacencies.keys
   end
   def to_s
-    nodes.map{|n| "#{n}, #{(@adjacencies[n].to_a.map{|x|x.join(',')}).join(" ")}"}.join("\n")
+    node_names.map{|n| "#{node_id(n)}, #{(@adjacencies[n].to_a.map{|x| "#{node_id(x[0])},#{x[1]}"}).join(" ")}"}.join("\n")
   end
   def nodes_names_to_s
-    nodes.map{|n| "#{n}, #{node_name(n)}"}.join("\n")
+    node_names.map{|n| "#{node_id(n)}, #{n}"}.join("\n")
   end
   def stations
-    nodes.map{|n| "#{node_name(n)}, #{n}"}.join("\n")
+    node_names.map{|n| "#{n}, #{node_id(n)}"}.join("\n")
   end
 end
