@@ -20,3 +20,9 @@ docker-compose run bvg-graph rails new . --force --database=postgresql
 
 
 docker-compose run bvg-graph bash
+
+
+# Leaflet
+
+- copied to vendor/leaflet, see http://guides.rubyonrails.org/asset_pipeline.html
+- http://guides.rubyonrails.org/layouts_and_rendering.html#structuring-layouts

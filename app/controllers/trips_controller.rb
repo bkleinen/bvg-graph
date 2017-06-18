@@ -13,6 +13,10 @@ class TripsController < ApplicationController
     @stop_times = @trip.stop_times
     @hops = @trip.hops
     @graph = Hop.graph(@hops)
+    @shape = @trip.shape
+    @route = @trip.route
+    @route_s ="["+@route.map{|p| "[#{p.join(", ") }]"}.join(", ")+"]"
+    render layout: "shape"
   end
 
   # GET /trips/new

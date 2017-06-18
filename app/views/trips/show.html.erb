@@ -37,9 +37,58 @@
 </p>
 
 <p>
-  <strong>Shape identifier:</strong>
-  <%= @trip.shape_identifier %>
+  <strong>Shape:</strong>
+  <%= link_to @trip.shape_identifier, @shape %>
 </p>
+
+<script>
+
+ var mymap = L.map('location_map_id').setView(<%= @location_s %>, 13);
+
+ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+   maxZoom: 18,
+   attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+     '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+     'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+   id: 'mapbox.streets'
+ }).addTo(mymap);
+
+ var marker = L.marker(<%= @location_s %>).addTo(mymap);
+
+
+</script>
+
+<h2>Route Map</h2>
+
+
+<div id="route_map_id"></div>
+Route:
+<pre>
+  <%=@route_s%>
+</pre>
+<script>
+
+ var mymap = L.map('route_map_id').setView([52.508908,  13.406106], 13);
+
+ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+   maxZoom: 18,
+   attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+     '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+     'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+   id: 'mapbox.streets'
+ }).addTo(mymap);
+
+ var polygon = L.polygon([
+   [51.509, -0.08],
+   [51.503, -0.06],
+   [51.51, -0.047]
+]).addTo(mymap);
+
+
+
+var trip_route = L.polygon(<%=@route_s%>).addTo(mymap);
+</script>
+
 
 <p id="notice"><%= notice %></p>
 

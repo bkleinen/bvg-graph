@@ -28,10 +28,10 @@ class Graph
     @adjacencies.keys
   end
   def to_s
-    node_names.map{|n| "#{node_id(n)}, #{(@adjacencies[n].to_a.map{|x| "#{node_id(x[0])},#{x[1]}"}).join(" ")}"}.join("\n")
+    node_names.map{|n| "#{node_id(n)} #{(@adjacencies[n].to_a.map{|x| "#{node_id(x[0])},#{x[1]}"}).join(" ")}"}.join("\n")
   end
   def nodes_names_to_s
-    node_names.map{|n| "#{node_id(n)},  #{n}"}.join("\n")
+    node_names.map{|n| "#{node_id(n)}, #{n}"}.join("\n")
   end
   def stations
     node_names.map{|n| "#{n}, #{node_id(n)}"}.join("\n")

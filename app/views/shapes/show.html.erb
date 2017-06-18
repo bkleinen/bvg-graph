@@ -19,6 +19,49 @@
   <strong>Shape pt sequence:</strong>
   <%= @shape.shape_pt_sequence %>
 </p>
+@location_s
 
-<%= link_to 'Edit', edit_shape_path(@shape) %> |
-<%= link_to 'Back', shapes_path %>
+ <div id="location_map_id"></div>
+
+ <script>
+
+	var mymap = L.map('location_map_id').setView(<%= @location_s %>, 13);
+
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		id: 'mapbox.streets'
+	}).addTo(mymap);
+
+  var marker = L.marker(<%= @location_s %>).addTo(mymap);
+
+
+</script>
+
+<h2>London Example</h2>
+<a href = "http://leafletjs.com/examples/quick-start/">http://leafletjs.com/examples/quick-start/</a>
+
+ <div id="mapid"></div>
+
+ <script>
+
+	var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		id: 'mapbox.streets'
+	}).addTo(mymap);
+
+  var marker = L.marker([51.5, -0.09]).addTo(mymap);
+  var polygon = L.polygon([
+    [51.509, -0.08],
+    [51.503, -0.06],
+    [51.51, -0.047]
+]).addTo(mymap);
+
+</script>

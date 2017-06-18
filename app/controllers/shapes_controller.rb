@@ -1,6 +1,6 @@
 class ShapesController < ApplicationController
   before_action :set_shape, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_location, only: [:show]
   # GET /shapes
   # GET /shapes.json
   def index
@@ -10,6 +10,7 @@ class ShapesController < ApplicationController
   # GET /shapes/1
   # GET /shapes/1.json
   def show
+    render layout: "shape"
   end
 
   # GET /shapes/new
@@ -70,5 +71,10 @@ class ShapesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def shape_params
       params.require(:shape).permit(:shape_identifier, :shape_pt_lat, :shape_pt_lon, :shape_pt_sequence)
+    end
+
+    def set_location
+      @location = [@shape.shape_pt_lat, @shape.shape_pt_lon]
+      @location_s = @location.inspect
     end
 end
