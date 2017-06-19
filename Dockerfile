@@ -26,6 +26,7 @@ ADD Gemfile.lock $APP_HOME/Gemfile.lock
 
 RUN bundle config build.nokogiri --use-system-libraries && \
     bundle install && \
+    bundle exec rails assets:precompile && \
     bundle clean
 ADD . $APP_HOME
 # CMD ["bundle", "exec", "rails", "server","--port", "80"]
