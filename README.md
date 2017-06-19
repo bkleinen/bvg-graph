@@ -1,5 +1,9 @@
 # README
 
+This is a rails application to experiment with the Open Data made accessible
+in GTFS-Format by VBB, see [http://www.vbb.de/de/article/fahrplan/webservices/datensaetze/1186967.html](http://www.vbb.de/de/article/fahrplan/webservices/datensaetze/1186967.html)
+
+
 ## SETUP of Docker Rails app
 
 for setting up the rails app in docker, I've followed the instructions in:
@@ -15,16 +19,14 @@ docker-compose run bvg-graph rails new . --force --database=postgresql
     docker-compose exec bvg-graph bash
 
 
-# copy the bvg data   
-    - "../bvg-data:/usr/src/app/db/data"
+# Import BVG-Data
 
 
-docker-compose run bvg-graph bash
 
 ## Test in Production mode
 
-14:45:37-kleinen~/mine/current/code/bvg/bvg-graph-docker (master)$ export SECRET_KEY_BASE=b3d42b43ed6bed4534775565e55bac587a3278da429288bd95dbce9653d3859d6217b074a05b1a519840a9f1ceec945eaf44b1985f34ceef94f8916b2093b727
-14:45:47-kleinen~/mine/current/code/bvg/bvg-graph-docker (master)$ docker-compose -f docker-compose-prd.yml up
+ export SECRET_KEY_BASE=<top secret> # e.g. generate with rake secret
+ docker-compose -f docker-compose-prd.yml up
 
 # Leaflet
 
